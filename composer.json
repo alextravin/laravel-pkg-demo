@@ -1,0 +1,28 @@
+{
+    "name": "alextravin/laravel-pkg-demo",
+    "description": "Just another one test package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aleksey Shebarshin",
+            "email": "madonnovna@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^8",
+        "illuminate/routing": "^8.28"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlexTravin\\SkillsTest\\" : "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AlexTravin\\SkillsTest\\PhptestServiceProvider"
+            ]
+        }
+    }
+}
